@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "keyword-search-client-side-solution",
+    "id": "9df43f0d-bdb6-4b56-9a99-af4225443cf2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "keyword-search description"
+      },
+      "longDescription": {
+        "default": "keyword-search description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "keyword-search Feature",
+        "description": "The feature that activates elements of the keyword-search solution.",
+        "id": "bd2cb815-0b07-4051-aa74-04e18acc4d76",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/keyword-search.sppkg"
+  }
+}

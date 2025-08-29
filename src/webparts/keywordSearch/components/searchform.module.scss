@@ -1,0 +1,90 @@
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #323130;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  border-color: #0078d4;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 120, 212, 0.4);
+}
+
+.button {
+  grid-column: span 2;
+  padding: 10px 16px;
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.button:hover {
+  background: #005a9e;
+}
+
+.resultsTitle {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #201f1e;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th {
+  background: #f3f2f1;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.noResults {
+  color: #605e5c;
+  font-style: italic;
+}
