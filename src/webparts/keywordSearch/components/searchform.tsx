@@ -115,16 +115,17 @@ const CsvSearchForm: React.FC<ICsvSearchFormProps> = ({ context }) => {   // ✅
 
       {/* Search Form */}
       <div className={styles.form}>
-        {Object.keys(query).map(key => (
-          <input
-            key={key}
-            name={key}
-            placeholder={key.replace(/_/g, " ")} // nicer placeholder
-            value={query[key as keyof typeof query]}
-            onChange={handleChange}
-            className={styles.input}
-          />
-        ))}
+        {Object.keys(query).map((key) => (
+  <input
+    key={key}
+    name={key}
+    placeholder={key === "person_title" ? "Designation" : key.replace(/_/g, " ")}
+    value={query[key as keyof typeof query]}
+    onChange={handleChange}
+    className={styles.input}
+  />
+))}
+
         <button onClick={handleSearch} className={styles.button}>
           Search
         </button>

@@ -1,7 +1,7 @@
 .container {
   max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
   border-radius: 12px;
@@ -10,10 +10,10 @@
 
 .title {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #323130;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .form {
@@ -23,7 +23,10 @@
   margin-bottom: 20px;
 }
 
+/* Make inputs full width on small screens */
 .input {
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
   border: 1px solid #d0d0d0;
   border-radius: 8px;
@@ -56,7 +59,7 @@
 
 .resultsTitle {
   margin: 20px 0 10px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #201f1e;
 }
@@ -72,19 +75,50 @@
   font-size: 14px;
 }
 
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px;
+  min-width: 80px;
+  box-sizing: border-box;
+}
+
 .table th {
   background: #f3f2f1;
-  text-align: left;
-  padding: 10px;
   border-bottom: 2px solid #e0e0e0;
 }
 
 .table td {
-  padding: 10px;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .noResults {
   color: #605e5c;
   font-style: italic;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr; /* stack inputs vertically */
+  }
+
+  .button {
+    grid-column: span 1; /* button full width on mobile */
+  }
+
+  .table th,
+  .table td {
+    padding: 6px;
+    font-size: 12px;
+  }
 }
